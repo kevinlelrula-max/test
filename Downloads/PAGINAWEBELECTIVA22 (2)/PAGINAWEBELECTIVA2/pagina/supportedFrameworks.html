@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f8f9fa;
+      background: #f9fafb;
       margin: 0;
       padding: 20px;
     }
@@ -20,96 +20,60 @@
 
     h2 {
       font-size: 1.8rem;
-      color: #2563eb;
+      color: #0d6efd; /* azul estilo bootstrap */
       margin-bottom: 20px;
       text-align: center;
-    }
-
-    .frameworks-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
     }
 
     .card {
       background: #fff;
       border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      margin-bottom: 20px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #333;
-      font-size: 1.2rem;
+    .card p {
+      color: #444;
+      line-height: 1.6;
     }
 
-    .card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
     }
 
-    .card ul li {
-      margin: 8px 0;
-      padding-left: 25px;
-      position: relative;
-    }
-
-    .card ul li::before {
-      content: "✔";
-      color: #2563eb;
-      font-weight: bold;
-      position: absolute;
-      left: 0;
+    ul li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
   <section class="mb-5">
     <h2>📚 Supported Frameworks</h2>
-
-    <div class="frameworks-grid">
-      <div class="card">
-        <h3>Frontend</h3>
+    <div class="card">
+      <div class="card-body">
+        <p>
+          Vercel tiene soporte nativo para una gran variedad de frameworks y librerías, lo que 
+          permite desplegar proyectos sin configuraciones complejas. Entre los más usados se encuentran:
+        </p>
         <ul>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>Angular</li>
-          <li>Vue.js</li>
-          <li>Svelte</li>
+          <li>Frontend: React, Next.js, Angular, Vue.js y Svelte.</li>
+          <li>Backend y Full-Stack: Nuxt, Astro y Remix.</li>
+          <li>Sitios estáticos: Hugo, Eleventy y Jekyll.</li>
         </ul>
-      </div>
-
-      <div class="card">
-        <h3>Backend / Full-Stack</h3>
-        <ul>
-          <li>Nuxt</li>
-          <li>Astro</li>
-          <li>Remix</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Sitios Estáticos</h3>
-        <ul>
-          <li>Hugo</li>
-          <li>Eleventy</li>
-          <li>Jekyll</li>
-        </ul>
+        <p>
+          La plataforma optimiza automáticamente cada framework, habilitando características como 
+          renderizado dinámico, regeneración estática e integración con funciones serverless.
+        </p>
       </div>
     </div>
-
-    <p style="margin-top:30px; text-align:center; color:#555;">
-      🚀 Vercel optimiza automáticamente cada framework, habilitando renderizado dinámico, 
-      regeneración estática e integración con funciones serverless.
-    </p>
   </section>
 </body>
 </html>
