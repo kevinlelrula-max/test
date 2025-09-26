@@ -1,23 +1,13 @@
-# Node modules (no subir dependencias)
-node_modules/
+# Ignorar subrepositorios antiguos
+test/
 
-# Carpeta de backup
-backup/
-
-# Archivos de sistema que no necesitamos
+# Ignorar archivos del sistema
+*.log
+*.tmp
 .DS_Store
 Thumbs.db
 
-# Archivos temporales o logs
-*.log
-*.tmp
-*.bak
-
-# Bloquea archivos de lock de package managers (opcional)
-yarn.lock
-package-lock.json
-
-# Configuraciones de editores (opcional)
+# Ignorar configuraciones locales de editores
 .vscode/
-.idea/
+node_modules/
 
