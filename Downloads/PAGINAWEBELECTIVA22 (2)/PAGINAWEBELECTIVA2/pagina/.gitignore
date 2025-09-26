@@ -1,0 +1,23 @@
+# Node modules (no subir dependencias)
+node_modules/
+
+# Carpeta de backup
+backup/
+
+# Archivos de sistema que no necesitamos
+.DS_Store
+Thumbs.db
+
+# Archivos temporales o logs
+*.log
+*.tmp
+*.bak
+
+# Bloquea archivos de lock de package managers (opcional)
+yarn.lock
+package-lock.json
+
+# Configuraciones de editores (opcional)
+.vscode/
+.idea/
+
