@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/gettingStarted", "destination": "/gettingStarted.html" },
+    { "source": "/supportedFrameworks", "destination": "/supportedFrameworks.html" }
+  ]
+}
